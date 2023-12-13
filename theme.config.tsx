@@ -43,7 +43,7 @@ const logo = (
   <>
     <Image
       src={"/CodeDeployingSquad_light.png"}
-      className="hidden dark:sm:inline-flex  opacity-70"
+      className="hidden dark:sm:inline-flex translate-y-[-1rem] animate-fade-in  opacity-70 "
       height={200}
       width={200}
       alt="CodeDeployingSquad"
@@ -51,7 +51,7 @@ const logo = (
 
     <Image
       src={"/CodeDeployingSquad_dark.png"}
-      className="hidden dark:hidden sm:inline-flex opacity-70"
+      className="hidden dark:hidden sm:inline-flex translate-y-[-1rem] animate-fade-in opacity-70"
       height={200}
       width={200}
       alt="CodeDeployingSquad"
