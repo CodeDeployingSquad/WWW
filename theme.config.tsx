@@ -93,8 +93,8 @@ const config: DocsThemeConfig = {
     const { route } = useRouter();
     const socialCard =
       route === "/" || !title
-        ? "https://localhost:3000/og.jpeg"
-        : `https://localhost:3000/api/og?title=${title}`;
+        ? "https://www.codedeployingsquad.tech/og.jpeg"
+        : `https://www.codedeployingsquad.tech/api/og?title=${title}`;
 
     return (
       <>
