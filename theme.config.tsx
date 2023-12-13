@@ -192,10 +192,9 @@ const config: DocsThemeConfig = {
   },
   toc: {
     backToTop: true,
-    extraContent: (
-      // eslint-disable-next-line @next/next/no-img-element -- ignore since url is external and dynamic
-      <img alt="placeholder cat" src="https://placekitten.com/g/300/200" />
-    ),
+    // extraContent: (
+    //   <img alt="placeholder cat" src="https://placekitten.com/g/300/200" />
+    // ),
   },
 };
 
