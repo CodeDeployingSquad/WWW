@@ -1,0 +1,129 @@
+.file {
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 1px 6px;
+  border-radius: 0.375rem;
+  border: 1px solid #0077ff;
+  color: #0077ff;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+.file.active {
+  background-color: #0077ff;
+  color: white;
+}
+
+.comparison {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.comparison > svg {
+  opacity: 0.3;
+}
+
+.optimization {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(27deg, #3d3d3d, #000000);
+  color: #e3e3e3;
+  border-radius: 0.375rem;
+  font-weight: 300;
+}
+
+:global(.dark) .optimization {
+  background: linear-gradient(27deg, #3d3d3d, #252525);
+}
+
+a.cta {
+  display: inline-block;
+  background: linear-gradient(to bottom, #81b8f7, #0077ff);
+  text-decoration: none;
+  border-radius: 9999px;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+  text-shadow: 0 1px 1px #00387838;
+  box-shadow: 0 1px 2px #00295738;
+  transition: all 0.2s ease;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a.cta span {
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+a.cta:hover span {
+  transform: translateX(3px);
+}
+a.cta:hover {
+  box-shadow: 0 5px 40px 5px #0078ffab;
+  filter: brightness(1.05);
+}
+a.cta:active {
+  box-shadow: 0 1px 3px #00295738;
+  filter: brightness(0.95);
+}
+a.cta:active span {
+  transform: translateX(5px);
+}
+a.cta:focus-visible {
+  outline: 2px solid
+    hsl(var(--nextra-primary-hue) var(--nextra-primary-saturation) 77%);
+  outline-offset: 2px;
+}
+a.cta:focus-visible span {
+  transform: translateX(3px);
+}
+
+a.discordbtn {
+  display: inline-block;
+  background: linear-gradient(to bottom, #7289DA, #5865F2); /* Discord's branding colors */
+  text-decoration: none;
+  border-radius: 9999px;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+  text-shadow: 0 1px 1px #00387838;
+  box-shadow: 0 1px 2px #00295738;
+  transition: all 0.2s ease;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a.discordbtn span {
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+a.discordbtn:hover span {
+  transform: translateX(3px);
+}
+
+a.discordbtn:hover {
+  box-shadow: 0 5px 40px 5px #5865F2ab; /* Adjust the color for the hover effect */
+  filter: brightness(1.05);
+}
+
+a.discordbtn:active {
+  box-shadow: 0 1px 3px #00295738;
+  filter: brightness(0.95);
+}
+
+a.discordbtn:active span {
+  transform: translateX(5px);
+}
+
+a.discordbtn:focus-visible {
+  outline: 2px solid #7289DA; /* Discord's primary color */
+  outline-offset: 2px;
+}
+
+a.discordbtn:focus-visible span {
+  transform: translateX(3px);
+}

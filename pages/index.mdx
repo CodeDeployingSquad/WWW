@@ -1,0 +1,84 @@
+---
+title: CodeDeployingSquad
+---
+
+import { Feature, Features } from "@components/features";
+import { ArrowRightIcon } from "@components/icons";
+import cn from "clsx";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import styles from "./index.module.css";
+import Card from "@components/smash-card/Card";
+// import HeroImage from "@components/HeroImage";
+
+
+<div className="home-content">
+  <div className="content-container flex flex-col min-h-[calc(100svh-var(--nextra-navbar-height))] justify-center items-center">
+    <div className="relative flex justify-center items-center">
+      <div className="  absolute flex justify-center items-center animate-blob top-16">
+        <div className=" absolute -right-52 w-40 h-40  bg-indigo-500 opacity-50 rounded-full blur-3xl  "></div>
+        <div className=" absolute -left-52 w-40 h-40 bg-blue-500 opacity-50 rounded-full blur-3xl "></div>
+        </div>
+          <Image
+            className=" shadow-2xl rounded-full z-0"
+            alt="cds"
+            src="/cds_circle.png"
+            width="120"
+            height="120"
+          />
+      </div>
+    <h1 className="headline">CodeDeployingSquad</h1>
+    <p className="subtitle text-center">The <span className='font-extrabold'>largest community</span> of tomorrow's <span className='font-extrabold'>open source developers</span>.</p>
+    <div className="flex gap-4">
+      <p className="subtitle">
+        <Link className={styles.discordbtn}  href="/docs">Discord <span>↗</span></Link>
+      </p>
+      <p className="subtitle">
+        <Link className={styles.cta} href="/docs">Twitter <span>↗</span></Link>
+      </p>
+  </div>
+</div>
+
+<style jsx>{`
+  .content-container {
+    max-width: 90rem;
+    padding-left: max(env(safe-area-inset-left), 1.5rem);
+    padding-right: max(env(safe-area-inset-right), 1.5rem);
+    margin: 0 auto;
+  }
+  .headline {
+    display: inline-flex;
+    font-size: 3.125rem;
+    font-size: min(4.375rem, max(8vw, 2.5rem));
+    font-weight: 700;
+    font-feature-settings: initial;
+    letter-spacing: -0.22rem;
+    margin-left: -0.2rem;
+    margin-top: 3.4rem;
+    line-height: 1.1;
+    background-image: linear-gradient(146deg, #000, #757a7d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  :global(.dark) .headline {
+    background-image: linear-gradient(146deg, #fff, #757a7d);
+  }
+  .subtitle {
+    font-size: 1.3rem;
+    font-size: min(1.3rem, max(3.5vw, 1.2rem));
+    font-feature-settings: initial;
+    line-height: 1.6;
+  }
+  @media screen and (max-width: 1200px) {
+    .headline {
+      letter-spacing: -0.08rem;
+    }
+  }
+`}</style>
+  {/* <div className="p-[100px]">
+    <HeroImage />
+  </div> */}
+</div>

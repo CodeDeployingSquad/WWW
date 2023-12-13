@@ -1,0 +1,72 @@
+# Introduction
+
+**CodeDeployingSquad** is vibrant community of developers, passionate about creating **innovative solutions**. Our mission is to foster a **collaborative environment** where developers of **all backgrounds** come together to **learn, share, and build** impactful projects. With a **diverse** range of expertise spanning web development, machine learning, and more, we offer a supportive space for **continuous growth**. 
+<br />
+What sets us apart is our commitment to **real-world applications** and a **culture** of **active collaboration**. Whether you're a seasoned pro or just starting out, join us in shaping the **future of technology**. Together, we're not just writing code; we're **deploying solutions**.
+
+
+## Quick Start
+
+import { Cards } from 'nextra/components'
+
+For getting started, we suggest you to go through the our **contributor's guide** or **projects documentation**
+
+<Cards num={2}>
+  <Cards.Card
+    image
+    arrow
+    title="Contributor's guide"
+    href="/docs/docs-theme/start"
+  >
+    <>![Contributor's guide](/assets/docs-theme.png)</>
+  </Cards.Card>
+  <Cards.Card image arrow title="Projects documentation" href="/docs/blog-theme/start">
+    <>![Projects documentation](/assets/blog-theme.png)</>
+  </Cards.Card>
+</Cards>
+
+If you want a **quick view** of our projects, you can explore
+the [Showcase](/showcase).
+
+## FAQs
+
+The FAQs are the collection of useful questions and answers. If you have a question that isn't answered here, please
+[open a discussion](https://github.com/CodeDeployingSquad/website/discussions).
+
+export function FAQBox({ title, children }) {
+  return (
+    <details
+      open
+      className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+    >
+      <summary>
+        <strong className="text-lg">{title}</strong>
+      </summary>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  )
+}
+
+<FAQBox title="What is the main mission of CodeDeployingSquad?">
+  CodeDeployingSquad's main mission is to foster a collaborative environment where developers of all backgrounds come together to learn, share, and build innovative solutions. The community is dedicated to creating impactful projects and promoting continuous growth among its members.
+</FAQBox>
+
+<FAQBox title="What expertise does CodeDeployingSquad cover?">
+  CodeDeployingSquad covers a diverse range of expertise, including web development, machine learning, and more. Members bring different skills and knowledge to the community, creating a rich environment for learning and collaboration.
+</FAQBox>
+
+<FAQBox title="How does CodeDeployingSquad support continuous growth among its members?">
+  CodeDeployingSquad provides a supportive space for continuous growth by offering resources, mentorship, and opportunities for skill development. Whether you're a seasoned professional or a beginner, the community is designed to help individuals advance their skills and knowledge in the ever-evolving field of technology.
+</FAQBox>
+
+<FAQBox title="Can anyone join CodeDeployingSquad, regardless of their experience level?">
+  Absolutely! CodeDeployingSquad welcomes developers of all backgrounds and experience levels. Whether you're a seasoned pro or just starting out, the community values diversity and believes that everyone has something valuable to contribute.
+</FAQBox>
+
+<FAQBox title="How does CodeDeployingSquad contribute to shaping the future of technology?">
+  CodeDeployingSquad actively contributes to shaping the future of technology by focusing on real-world applications and encouraging its members to deploy solutions. The community believes in not just writing code but in creating solutions that address real-world challenges and have a positive impact on the technological landscape.
+</FAQBox>
+
+<FAQBox title="What is the culture like within CodeDeployingSquad?">
+  The culture within CodeDeployingSquad is characterized by active collaboration, a passion for innovation, and a commitment to supporting one another. Members of the community work together to create a vibrant and dynamic atmosphere where ideas are shared, and projects are developed collaboratively.
+</FAQBox>

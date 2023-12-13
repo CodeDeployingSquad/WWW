@@ -1,0 +1,43 @@
+{
+  "index": {
+    "type": "page",
+    "title": "CodeDeployingSquad",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "type": "page",
+    "title": "Documentation"
+  },
+  "blog": {
+    "type": "page",
+    "title": "Blog",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "showcase": {
+    "type": "page",
+    "title": "Showcase",
+    "theme": {
+      "typesetting": "article",
+      "layout": "full"
+    }
+  },
+  "about": {
+    "type": "page",
+    "title": "About",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}
