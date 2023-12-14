@@ -82,7 +82,7 @@ export default async function (req) {
         </h1>
         <p
           style={{
-            fontSize: 32,
+            fontSize: 34,
             margin: "0 0 40px -2px",
             lineHeight: 1.1,
             textShadow: "0 2px 30px #000",
@@ -90,11 +90,10 @@ export default async function (req) {
             backgroundImage: "linear-gradient(90deg, #fff 40%, #aaa)",
             backgroundClip: "text",
             "-webkit-background-clip": "text",
-            color: "transparent",
-            fontStyle: 'italic'
+            color: "transparent"
           }}
         >
-          <i style={{ fontStyle: 'italic' }}>{description}</i>
+          {description}
         </p>
       </div>
     ),
