@@ -1,8 +1,3 @@
----
-title: CDS Website
-description: Docs for CodeDeployingSquad's Website 📜
----
-
 <p align="center">
   <a href="https://cdsorg.vercel.app/">
     <img alt="CDS" title="CDS" src="https://www.codedeployingsquad.tech/assets/website/cdsglobe.png" width="200">
@@ -13,7 +8,7 @@ description: Docs for CodeDeployingSquad's Website 📜
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: center;">
+<div align="center">
 <a href="https://github.com/CodeDeployingSquad/graphs/contributors" style="margin: 0 5px;">
     <img alt="Contributors" src="https://img.shields.io/github/contributors/CodeDeployingSquad/website?label=Contributors&color=blue">
 </a>
