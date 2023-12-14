@@ -71,7 +71,7 @@ const config: DocsThemeConfig = {
         />
         <meta
           name="og:description"
-          content={frontMatter.description || 'The CDS Documentation'}
+          content={frontMatter.description || 'The CodeDeployingSquad Documentation'}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
@@ -81,6 +81,7 @@ const config: DocsThemeConfig = {
           name="og:title"
           content={title ? title + " – CDS" : "CodeDeployingSquad"}
         />
+        <meta property="og:image" content={socialCard} />
         <meta name="og:image" content={socialCard} />
         <meta name="apple-mobile-web-app-title" content="CodeDeployingSquad" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
