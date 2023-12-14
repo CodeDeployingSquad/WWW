@@ -80,7 +80,7 @@ export default async function (req) {
         >
           {title}
         </h1>
-        <p
+        {/* <p
           style={{
             fontSize: 34,
             margin: "0 0 40px -2px",
@@ -94,7 +94,7 @@ export default async function (req) {
           }}
         >
           {description}
-        </p>
+        </p> */}
       </div>
     ),
     {
