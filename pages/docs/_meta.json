@@ -7,7 +7,9 @@
     "type": "separator",
     "title": "Projects"
   },
-  "website": "Website",
+  "applications": "Applications",
+  "packages": "Packages",
+  "sdks": "SDKs",
   "-- More": {
     "type": "separator",
     "title": "More"
