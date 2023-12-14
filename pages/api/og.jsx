@@ -81,7 +81,7 @@ export default async function (req) {
           {title}
         </h1>
 
-        {description !== "undefined" && (
+        {description !== undefined && (
           <p
             style={{
               fontSize: 34,
