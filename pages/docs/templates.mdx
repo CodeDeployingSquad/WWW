@@ -1,23 +1,20 @@
-import {
-  BoxIcon,
-  BrushIcon,
-  DropperIcon,
-  FilesIcon,
-  GlobeIcon,
-  LightningIcon,
-  LinkIcon,
-  MarkdownIcon,
-  PictureIcon,
-  StarsIcon
-} from '@components/icons'
+import { FileIcon } from '@components/icons'
 import { Card, Cards } from 'nextra/components'
+import { getPagesUnderRoute } from 'nextra/context'
 
-# Templates
+export function TemplateIndex() {
+  return getPagesUnderRoute('/docs/templates').map(page => {
+    return (
+      <Card icon={<FileIcon />} title={page?.meta.title} href={page.route} />
+    )
+  })
+}
+
+
+# 📄 Templates
 
 Here are some useful templates.
 
 <Cards>
-  <Card icon={<GlobeIcon />} title="Pull Request Template" href="/docs/templates/prtemplate" />
-  <Card icon={<PictureIcon />} title="Commit Convention" href="/docs/templates/commitconvention" />
-  <Card icon={<GlobeIcon />} title="Issue Template" href="/docs/templates/issuetemplate" />
+  <TemplateIndex />
 </Cards>

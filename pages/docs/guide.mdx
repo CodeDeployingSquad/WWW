@@ -1,18 +1,16 @@
-import {
-  BoxIcon,
-  BrushIcon,
-  DropperIcon,
-  FilesIcon,
-  GlobeIcon,
-  LightningIcon,
-  LinkIcon,
-  MarkdownIcon,
-  PictureIcon,
-  StarsIcon
-} from '@components/icons'
+import { FileIcon } from '@components/icons'
 import { Card, Cards } from 'nextra/components'
+import { getPagesUnderRoute } from 'nextra/context'
 
-# Guide
+export function GuideIndex() {
+  return getPagesUnderRoute('/docs/guide').map(page => {
+    return (
+      <Card icon={<FileIcon />} title={page?.meta.title} href={page.route} />
+    )
+  })
+}
+
+# 📚 Guide
 
 The following is a set of guidelines for contributing to CodeDeployingSquad. These are just guidelines, not rules, so use your best judgment and feel free to propose changes to this document in a pull request.
 
@@ -20,5 +18,5 @@ Before contributing, we encourage you to read our [Code of Conduct](/docs/guide/
 
 
 <Cards>
-  <Card icon={<LightningIcon />} title="Contribution Guide" href="/docs/guide/contributingguide" />
+  <GuideIndex />
 </Cards>

@@ -1,21 +1,19 @@
-import {
-  BoxIcon,
-  BrushIcon,
-  DropperIcon,
-  FilesIcon,
-  GlobeIcon,
-  LightningIcon,
-  LinkIcon,
-  MarkdownIcon,
-  PictureIcon,
-  StarsIcon
-} from '@components/icons'
+import { FileIcon } from '@components/icons'
 import { Card, Cards } from 'nextra/components'
+import { getPagesUnderRoute } from 'nextra/context'
+
+export function PSIndex() {
+  return getPagesUnderRoute('/docs/guide/project_structures').map(page => {
+    return (
+      <Card icon={<FileIcon />} title={page?.meta.title} href={page.route} />
+    )
+  })
+}
 
 ## 🫚 Project Structures
 
 Before contributing to the project, you need to understand the project structure and how it works. This section guides you through the **basic project structure**.
 
 <Cards>
-  <Card icon={<LightningIcon />} title="Contribution Guide" href="/docs/guide/contributingguide" />
+  <PSIndex />
 </Cards>
