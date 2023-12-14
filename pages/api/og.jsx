@@ -46,6 +46,7 @@ export default async function (req) {
             "https://www.codedeployingsquad.tech/CodeDeployingSquad_light.png"
           }
           alt="CDS_Logo"
+          height={40}
         />
         <p
           style={{
