@@ -1,5 +1,7 @@
 /* eslint-env node */
 import { ImageResponse } from '@vercel/og'
+import Image from 'next/image'
+import CDS_Circle from '/og.jpeg'
 
 export const config = {
   runtime: 'edge'
@@ -40,7 +42,7 @@ export default async function (req) {
           color: 'white'
         }}
       >
-        <svg
+        {/* <svg
           style={{ position: 'absolute', top: 70, left: 80 }}
           height="40"
           viewBox="0 0 361 70"
@@ -56,7 +58,11 @@ export default async function (req) {
             stroke="white"
             strokeWidth="2"
           />
-        </svg>
+        </svg> */}
+        <Image 
+          alt='cds'
+          src={CDS_Circle}
+        />
         <p
           style={{
             position: 'absolute',
@@ -67,7 +73,7 @@ export default async function (req) {
             letterSpacing: -1
           }}
         >
-          Create beautiful websites with Next.js & MDX.
+          The largest community of tomorrow's open source developers.
         </p>
         <h1
           style={{
