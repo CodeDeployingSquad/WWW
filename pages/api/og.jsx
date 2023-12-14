@@ -42,11 +42,12 @@ export default async function (req) {
         }}
       >
         <img
+          style={{ position: "absolute", top: 70, left: 80 }}
+          height="40"
           src={
             "https://www.codedeployingsquad.tech/CodeDeployingSquad_light.png"
           }
           alt="CDS_Logo"
-          height={40}
         />
         <p
           style={{
