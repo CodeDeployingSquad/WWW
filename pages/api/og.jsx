@@ -1,6 +1,5 @@
 /* eslint-env node */
 import { ImageResponse } from '@vercel/og'
-import Image from 'next/image'
 
 export const config = {
   runtime: 'edge'
@@ -32,19 +31,15 @@ export default async function (req) {
           alignItems: 'flex-start',
           justifyContent: 'center',
           padding: 80,
-          backgroundColor: 'bg-slate-950',
+          backgroundColor: '#030303',
           backgroundImage:
-            'linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)',
+            'radial-gradient(circle at 25px 25px, #333 2%, transparent 0%), radial-gradient(circle at 75px 75px, #333 2%, transparent 0%)',
           backgroundSize: '100px 100px',
           backgroundPosition: '-30px -10px',
           fontWeight: 600,
           color: 'white'
         }}
       >
-        <Image 
-          src={"https://www.codedeployingsquad.tech/CodeDeployingSquad_light.png"}
-          alt='cds_logo'
-        />
         <p
           style={{
             position: 'absolute',
@@ -55,7 +50,7 @@ export default async function (req) {
             letterSpacing: -1
           }}
         >
-          The largest community of tomorrow's open source developers.
+          CodeDeployingSquad - The largest community of tomorrow's open source developers.
         </p>
         <h1
           style={{
@@ -87,6 +82,3 @@ export default async function (req) {
     }
   )
 }
-
-
-{/* <div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div></div> */}
