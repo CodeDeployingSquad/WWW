@@ -1,6 +1,5 @@
 /* eslint-env node */
 import { ImageResponse } from '@vercel/og'
-import Image from 'next/image'
 
 export const config = {
   runtime: 'edge'
@@ -41,7 +40,7 @@ export default async function (req) {
           color: 'white'
         }}
       >
-        {/* <svg
+        <svg
           style={{ position: 'absolute', top: 70, left: 80 }}
           height="40"
           viewBox="0 0 361 70"
@@ -57,11 +56,7 @@ export default async function (req) {
             stroke="white"
             strokeWidth="2"
           />
-        </svg> */}
-        <Image 
-          alt='cds'
-          src="https://www.codedeployingsquad.tech/og.jpeg"
-        />
+        </svg>
         <p
           style={{
             position: 'absolute',
