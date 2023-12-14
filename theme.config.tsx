@@ -58,7 +58,7 @@ const config: DocsThemeConfig = {
       route === "/" || !title
         ? "https://www.codedeployingsquad.tech/og.jpeg"
         : `https://www.codedeployingsquad.tech/api/og?title=${title}&description=${frontMatter.description}`;
-    
+
     return (
       <>
         <meta name="msapplication-TileColor" content="#fff" />
@@ -71,18 +71,25 @@ const config: DocsThemeConfig = {
         />
         <meta
           name="og:description"
-          content={frontMatter.description || 'The CodeDeployingSquad Documentation'}
+          content={frontMatter.description ? frontMatter.description : " "}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
         <meta name="twitter:site:domain" content="codedeployingsquad.tech" />
         <meta name="twitter:url" content="https://codedeployingsquad.tech" />
         <meta
+          name="twitter:description"
+          content={frontMatter.description ? frontMatter.description : " "}
+        />
+        <meta
+          name="twitter:title"
+          content={title ? title + " – CDS" : "CodeDeployingSquad"}
+        />
+        <meta
           name="og:title"
           content={title ? title + " – CDS" : "CodeDeployingSquad"}
         />
         <meta property="og:image" content={socialCard} />
-        <meta name="og:image" content={socialCard} />
         <meta name="apple-mobile-web-app-title" content="CodeDeployingSquad" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/png" />

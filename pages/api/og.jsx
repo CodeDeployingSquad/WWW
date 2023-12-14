@@ -20,10 +20,10 @@ export default async function (req) {
   const hasDescription = searchParams.has("description");
   const title = hasTitle
     ? searchParams.get("title")?.slice(0, 100)
-    : "Doc Title";
+    : "CDS Documentation Title";
   const description = hasDescription
     ? searchParams.get("description")?.slice(0, 100)
-    : "Doc Discription";
+    : "CDS Documentation Discription";
 
   return new ImageResponse(
     (
