@@ -1,5 +1,7 @@
 {
+  "bugreporttemplate": "Bug Report Template",
   "prtemplate": "Pull-Request Template",
   "commitconvention": "Commit Template",
-  "issuetemplate": "Issue Template"
+  "issuetemplate": "Issue Template",
+  "suggestion": "Enhancement/Feature Request Template"
 }

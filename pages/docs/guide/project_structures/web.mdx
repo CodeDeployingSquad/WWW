@@ -1,0 +1,71 @@
+---
+title: Web Projects
+---
+
+## 🕸️ Web Projects
+
+### File Structure
+
+```plaintext
+
+├── app
+│   ├── controllers
+│   │   └── mainController.js
+│   ├── models
+│   │   └── mainModel.js
+│   ├── routes
+│   │   └── mainRoutes.js
+│   ├── views
+│   │   └── index.ejs
+├── config
+│   ├── database.js
+│   └── server.js
+├── public
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   └── script.js
+│   └── img
+├── node_modules
+├── package.json
+├── server.js
+└── README.md
+
+```
+
+### Project Structure Explanation
+
+1. **app**
+    - **controllers**: This directory contains files responsible for handling the application logic. Each controller corresponds to a specific feature or set of related features.
+
+    - **models**: The models directory is where you store data models. Models define the structure of your data and interact with the database.
+
+    - **routes**: In the routes directory, you define the routes for your application. Each route may correspond to a different endpoint or feature in your application.
+
+    - **views**: This directory holds your templates or views, especially if you are using a template engine like EJS. Views are responsible for rendering the HTML that is sent to the client.
+
+2. **config**
+    - **database.js**: Configuration file for the database. Here, you can set up connections to your database and define related configurations.
+
+    - **server.js**: Configuration file for the server. You may set up server-related configurations, middleware, and other server-specific settings here.
+
+3. **public**
+    - **css**: The css directory stores your stylesheets. These stylesheets are publicly accessible and used to style your HTML views.
+
+    - **js**: JavaScript files, including client-side scripts, go here. These scripts are publicly accessible and can enhance the interactivity of your web pages.
+
+    - **img**: The img directory is where you store your static images that can be served directly by the server.
+
+4. **node_modules**
+    - Node.js dependencies are installed in this directory. It is generated automatically when you run `npm install` based on the dependencies specified in your package.json file.
+
+5. **package.json**
+    - The package.json file contains metadata about the project, including its name, version, dependencies, and scripts.
+
+6. **server.js**
+    - This is the entry point for your application. It contains the main server setup and is responsible for starting your web server.
+
+7. **README.md**
+    - Documentation file providing an overview of the project, its structure, and any additional information for developers working on or using the project.
+
+>Feel free to adapt and customize this structure based on your specific project requirements.

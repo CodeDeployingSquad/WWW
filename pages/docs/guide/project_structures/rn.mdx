@@ -1,0 +1,86 @@
+---
+title: React-Native Projects
+---
+
+## ⚛ React-Native Projects
+
+### File Structure
+
+```plaintext
+
+MyReactNativeProject
+├── __tests__
+│   └── App.test.js
+├── android
+│   ├── app
+│   │   └── src
+│   └── build.gradle
+├── ios
+│   ├── MyReactNativeProject
+│   │   ├── AppDelegate.h
+│   │   └── AppDelegate.m
+│   └── MyReactNativeProject.xcodeproj
+├── node_modules
+├── src
+│   ├── assets
+│   ├── components
+│   │   └── MyComponent.js
+│   ├── screens
+│   │   └── HomeScreen.js
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── babel.config.js
+├── package.json
+├── README.md
+└── metro.config.js
+
+```
+
+### Project Structure Explanation
+
+1. **__tests__**: 
+   - This directory typically holds your test files.
+   - Example: `App.test.js`.
+   - You can add more test files as needed.
+
+2. **android**: 
+   - This directory contains all the Android-specific files and configurations for your React Native project.
+   - **app/src**: Where your Android application source code resides.
+   - **build.gradle**: Build configuration file for the Android project.
+
+3. **ios**: 
+   - This directory contains all the iOS-specific files and configurations for your React Native project.
+   - **MyReactNativeProject**: Directory containing iOS-specific source code files, such as `AppDelegate.h` and `AppDelegate.m`.
+   - **MyReactNativeProject.xcodeproj**: Xcode project file.
+
+4. **node_modules**: 
+   - This directory contains the dependencies and libraries installed for your project using npm or yarn.
+
+5. **src**: 
+   - This is the main source code directory for your React Native project.
+   - **assets**: Directory for storing static assets like images, fonts, etc.
+   - **components**: Directory for React components. Example: `MyComponent.js`.
+   - **screens**: Directory for React Native screens. Example: `HomeScreen.js`.
+   - **App.js**: The entry point of your React Native application.
+   - **index.js**: The file where the React Native app is registered.
+
+6. **.gitignore**: 
+   - This file lists files and directories that should be ignored by Git during version control.
+
+7. **babel.config.js**: 
+   - Configuration file for Babel, a JavaScript compiler used in React Native projects.
+
+8. **package.json**: 
+   - Metadata file that contains project-related information and dependencies.
+
+9. **README.md**: 
+   - This file! It contains essential information about the project, including its structure and how to set it up.
+
+10. **metro.config.js**: 
+    - Configuration file for Metro, the JavaScript bundler used by React Native.
+
+11. **Other files and directories**: 
+    - Your project may have additional files and directories based on specific requirements or configurations.
+
+>Feel free to adapt and customize this structure based on your specific project requirements.

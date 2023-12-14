@@ -31,14 +31,30 @@ import Card from "@components/smash-card/Card";
       </div>
     <h1 className="headline translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">CodeDeployingSquad</h1>
     <p className="subtitle text-center translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">The <span className='font-extrabold'>largest community</span> of tomorrow's <span className='font-extrabold'>open source developers</span>.</p>
-    <div className="flex gap-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+    <div className="flex flex-col sm:hidden items-center justify-center space-y-2 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms] py-[20px]">
+      <p className="subtitle w-screen flex justify-center items-center">
+        <Link className={styles.getstartedbtn} href="/docs">Get started <span>↗</span></Link>
+      </p>
+      <p className="subtitle w-screen flex justify-center items-center">
+        <Link className={styles.discordbtn}  href="https://discord.gg/8SFAywV4M8">Discord <span>↗</span></Link>
+      </p>
+      <p className="subtitle w-screen flex justify-center items-center">
+        <Link className={styles.cta} href="https://twitter.com/bettercallcds/">Twitter <span>↗</span></Link>
+      </p>
+    </div>
+
+    <div className="hidden sm:inline-flex items-center justify-center gap-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+      <p className="subtitle ">
+        <Link className={styles.getstartedbtn} href="/docs">Get started <span>↗</span></Link>
+      </p>
       <p className="subtitle">
         <Link className={styles.discordbtn}  href="https://discord.gg/8SFAywV4M8">Discord <span>↗</span></Link>
       </p>
       <p className="subtitle">
         <Link className={styles.cta} href="https://twitter.com/bettercallcds/">Twitter <span>↗</span></Link>
       </p>
-  </div>
+    </div>
+
 </div>
 
 <style jsx>{`
