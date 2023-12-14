@@ -17,7 +17,7 @@ export default async function (req) {
 
   // ?title=<title>
   const hasTitle = searchParams.has("title");
-  const hasDescription = searchParams.has(description);
+  const hasDescription = searchParams.has("description");
   const title = hasTitle
     ? searchParams.get("title")?.slice(0, 100)
     : "Doc Title";
@@ -86,7 +86,7 @@ export default async function (req) {
             margin: "0 0 40px -2px",
             lineHeight: 1.1,
             textShadow: "0 2px 30px #000",
-            letterSpacing: -2,
+            letterSpacing: -1,
             backgroundImage: "linear-gradient(90deg, #fff 40%, #aaa)",
             backgroundClip: "text",
             "-webkit-background-clip": "text",
