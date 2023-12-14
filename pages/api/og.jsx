@@ -32,28 +32,19 @@ export default async function (req) {
           alignItems: 'flex-start',
           justifyContent: 'center',
           padding: 80,
-          backgroundColor: '#030303',
+          backgroundColor: 'bg-slate-950',
           backgroundImage:
-            'radial-gradient(circle at 25px 25px, #333 2%, transparent 0%), radial-gradient(circle at 75px 75px, #333 2%, transparent 0%)',
+            'linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)',
           backgroundSize: '100px 100px',
           backgroundPosition: '-30px -10px',
           fontWeight: 600,
-          color: 'red'
+          color: 'white'
         }}
       >
-        <svg
-          style={{ position: 'absolute', top: 70, left: 80 }}
-          height="40"
-          viewBox="0 0 361 70"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="m64.8833 1.81335-2.8464 2.84638C47.1274 19.5692 22.9543 19.5692 8.04485 4.65972L5.19848 1.81335c-.93479-.93478-2.45037-.93478-3.38515 0-.93479.93478-.93478 2.45037 0 3.38515L4.6597 8.04487c14.9095 14.90953 14.9095 39.08263 0 53.99213l-2.84637 2.8463c-.93479.9348-.93479 2.4504 0 3.3852.93478.9348 2.45037.9348 3.38515 0l2.84637-2.8464c14.90955-14.9095 39.08255-14.9095 53.99205 0l2.8464 2.8464c.9348.9348 2.4504.9348 3.3852 0 .9347-.9348.9347-2.4504 0-3.3852l-2.8464-2.8463c-14.9095-14.9095-14.9095-39.0826 0-53.99213l2.8464-2.84637c.9347-.93478.9347-2.45037 0-3.38515-.9348-.93478-2.4504-.93478-3.3852 0Z"
-            fill="white"
-            stroke="white"
-            strokeWidth="2"
-          />
-        </svg>
+        <Image 
+          src={"https://www.codedeployingsquad.tech/CodeDeployingSquad_light.png"}
+          alt='cds_logo'
+        />
         <p
           style={{
             position: 'absolute',
@@ -64,7 +55,7 @@ export default async function (req) {
             letterSpacing: -1
           }}
         >
-          The largest community of tomorrow's open source gopal.
+          The largest community of tomorrow's open source developers.
         </p>
         <h1
           style={{
@@ -96,3 +87,6 @@ export default async function (req) {
     }
   )
 }
+
+
+{/* <div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div></div> */}
