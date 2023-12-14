@@ -17,7 +17,7 @@ export default async function (req) {
 
   // ?title=<title>
   const hasTitle = searchParams.has("title");
-  const hasDescription = searchParams.has("description");
+  const hasDescription = searchParams.has(description);
   const title = hasTitle
     ? searchParams.get("title")?.slice(0, 100)
     : "Doc Title";
