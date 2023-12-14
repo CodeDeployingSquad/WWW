@@ -1,7 +1,6 @@
 /* eslint-env node */
 import { ImageResponse } from '@vercel/og'
 import Image from 'next/image'
-import CDS_Circle from '/og.jpeg'
 
 export const config = {
   runtime: 'edge'
@@ -61,7 +60,7 @@ export default async function (req) {
         </svg> */}
         <Image 
           alt='cds'
-          src={CDS_Circle}
+          src="https://www.codedeployingsquad.tech/og.jpeg"
         />
         <p
           style={{
