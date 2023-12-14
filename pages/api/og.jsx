@@ -17,10 +17,14 @@ export default async function (req) {
 
   // ?title=<title>
   const hasTitle = searchParams.has("title");
+  const hasDescription = searchParams.has("description");
   const title = hasTitle
     ? searchParams.get("title")?.slice(0, 100)
-    : "CodeDeployingSquad";
-
+    : "Doc Title";
+  const description = hasDescription
+    ? searchParams.get("description")?.slice(0, 100)
+    : "Doc Discription";
+  
   return new ImageResponse(
     (
       <div
@@ -76,6 +80,22 @@ export default async function (req) {
         >
           {title}
         </h1>
+        <p
+          style={{
+            fontStyle: 'italic',
+            fontSize: 32,
+            margin: "0 0 40px -2px",
+            lineHeight: 1.1,
+            textShadow: "0 2px 30px #000",
+            letterSpacing: -4,
+            backgroundImage: "linear-gradient(90deg, #fff 40%, #aaa)",
+            backgroundClip: "text",
+            "-webkit-background-clip": "text",
+            color: "transparent",
+          }}
+        >
+          {description}
+        </p>
       </div>
     ),
     {
