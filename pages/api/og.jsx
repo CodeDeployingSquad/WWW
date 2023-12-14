@@ -38,7 +38,7 @@ export default async function (req) {
           padding: 80,
           backgroundColor: "#030303",
           backgroundImage:
-            "radial-gradient(circle at 25px 25px, #333 10%, transparent 0%), radial-gradient(circle at 75px 75px, #333 10%, transparent 0%)",
+            "radial-gradient(circle at 25px 25px, #333 5%, transparent 0%), radial-gradient(circle at 75px 75px, #333 5%, transparent 0%)",
           backgroundSize: "100px 100px",
           backgroundPosition: "-30px -10px",
           fontWeight: 600,
