@@ -82,12 +82,11 @@ export default async function (req) {
         </h1>
         <p
           style={{
-            fontStyle: 'italic',
             fontSize: 32,
             margin: "0 0 40px -2px",
             lineHeight: 1.1,
             textShadow: "0 2px 30px #000",
-            letterSpacing: -4,
+            letterSpacing: -2,
             backgroundImage: "linear-gradient(90deg, #fff 40%, #aaa)",
             backgroundClip: "text",
             "-webkit-background-clip": "text",
