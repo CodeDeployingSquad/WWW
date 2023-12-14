@@ -41,13 +41,13 @@ export default async function (req) {
           color: "white",
         }}
       >
-        <Image
+        <img
           src={
             "https://www.codedeployingsquad.tech/CodeDeployingSquad_light.png"
           }
           alt="CDS_Logo"
-          height={300}
-          width={300}
+          height={120}
+          width={120}
         />
         <p
           style={{
