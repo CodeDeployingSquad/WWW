@@ -91,9 +91,10 @@ export default async function (req) {
             backgroundClip: "text",
             "-webkit-background-clip": "text",
             color: "transparent",
+            fontStyle: 'italic'
           }}
         >
-          {description}
+          <i style={{ fontStyle: 'italic' }}>{description}</i>
         </p>
       </div>
     ),
