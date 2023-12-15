@@ -15,22 +15,22 @@ description: Docs for CodeDeployingSquad's Website 📜
 
 <div style="display: flex; justify-content: center; align-items: center;">
 <a href="https://github.com/CodeDeployingSquad/graphs/contributors" style="margin: 0 5px;">
-    <img alt="Contributors" src="https://img.shields.io/github/contributors/CodeDeployingSquad/website?label=Contributors&color=blue">
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/CodeDeployingSquad/cds-website?label=Contributors&color=blue">
 </a>
 <a href="https://github.com/CodeDeployingSquad/graphs/commit-activity" style="margin: 0 5px;">
-    <img alt="Commits" src="https://img.shields.io/github/commit-activity/t/CodeDeployingSquad/website?label=Commits&color=orange">
+    <img alt="Commits" src="https://img.shields.io/github/commit-activity/t/CodeDeployingSquad/cds-website?label=Commits&color=orange">
 </a>
 <a href="https://github.com/CodeDeployingSquad/pulls" style="margin: 0 5px;">
-    <img alt="PRs Open" src="https://img.shields.io/github/issues-pr-raw/CodeDeployingSquad/website?label=PRs%20Open&color=brightgreen">
+    <img alt="PRs Open" src="https://img.shields.io/github/issues-pr-raw/CodeDeployingSquad/cds-website?label=PRs%20Open&color=brightgreen">
 </a>
 <a href="https://github.com/CodeDeployingSquad/issues" style="margin: 0 5px;">
-    <img alt="Issues Open" src="https://img.shields.io/github/issues-raw/CodeDeployingSquad/website?label=Issues%20Open&color=red">
+    <img alt="Issues Open" src="https://img.shields.io/github/issues-raw/CodeDeployingSquad/cds-website?label=Issues%20Open&color=red">
 </a>
 <a href="https://github.com/CodeDeployingSquad/network/members" style="margin: 0 5px;">
-    <img alt="Forks" src="https://img.shields.io/github/forks/CodeDeployingSquad/website?label=Forks&color=lightgrey">
+    <img alt="Forks" src="https://img.shields.io/github/forks/CodeDeployingSquad/cds-website?label=Forks&color=lightgrey">
 </a>
 <a href="https://github.com/CodeDeployingSquad/stargazers" style="margin: 0 5px;">
-    <img alt="Stars" src="https://img.shields.io/github/stars/CodeDeployingSquad/website?label=Stars&color=yellow">
+    <img alt="Stars" src="https://img.shields.io/github/stars/CodeDeployingSquad/cds-website?label=Stars&color=yellow">
 </a>
 </div>
 
@@ -72,6 +72,6 @@ pnpm install
 
 ## <span id="contributors">Contributors</span>
 
-<a href="https://github.com/CodeDeployingSquad/website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CodeDeployingSquad/website" />
+<a href="https://github.com/CodeDeployingSquad/cds-website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CodeDeployingSquad/cds-website" />
 </a>
