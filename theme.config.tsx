@@ -153,7 +153,7 @@ const config: DocsThemeConfig = {
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} CodeDeployingSquad Inc.
+          © {new Date().getFullYear()} CodeDeployingSquad ( 𐄷 MIT License)
         </p>
       </div>
     ),

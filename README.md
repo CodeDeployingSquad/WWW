@@ -124,7 +124,7 @@ pnpm start
 
 ## <span id="license">License</span>
 
-This project is licensed under the [MIT License](https://opensource.org/license/mit/) - see the [LICENSE.md](/LICENSE.md) file for details.
+This project is licensed under the [MIT License](https://opensource.org/license/mit/) - see the [LICENSE.md](https://github.com/CodeDeployingSquad/cds-website/blob/main/LICENSE) file for details.
 
 ## <span id="acknowledgments">Acknowledgments</span>
 
