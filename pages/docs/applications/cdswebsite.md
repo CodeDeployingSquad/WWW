@@ -1,6 +1,6 @@
 ---
 title: CDS Website
-description: Docs for CodeDeployingSquad's Website 📜
+description: Docs for www.codedeployingsquad.tech 📜
 ---
 
 <p align="center">
