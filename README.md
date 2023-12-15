@@ -1,11 +1,6 @@
----
-title: CDS Website
-description: Docs for CodeDeployingSquad's Website 📜
----
-
 <p align="center">
   <a href="https://cdsorg.vercel.app/">
-    <img alt="CDS" title="CDS" src="/assets/website/cdsglobe.png" width="200">
+    <img alt="CDS" title="CDS" src="https://www.codedeployingsquad.tech/assets/website/cdsglobe.png" width="200">
   </a>
 </p> 
 <h1 align="center"> CDS Website </h1> 
@@ -37,7 +32,7 @@ description: Docs for CodeDeployingSquad's Website 📜
 <br>
 <br>
 <div align="center">
-  <img alt="CDS" title="CDS" src="/assets/website/ss.png" width="100%" style="border: 1px solid gray; border-radius: 5px; display: block; margin: 0 auto;">
+  <img alt="CDS" title="CDS" src="https://www.codedeployingsquad.tech/assets/website/ss.png" width="100%" style="border: 1px solid gray; border-radius: 5px; display: block; margin: 0 auto;">
 </div>
 <br>
 
@@ -84,7 +79,7 @@ pnpm install
 
 - `components` - dir for all the essential components
 - `content` - dir for all the constant content data
-- `pages` - dir for all the pages 
+- `pages` - dir for all the pages
   - `api` - dir for all the essential apis including opengraph api
   - `blog` - dir for all the blogs
     - `_meta.json` - file for configuring site and page structure
@@ -117,9 +112,9 @@ pnpm start
 
 ## <span id="contributing">Contributing</span>
 
->For contributing checkout our [Contributing Guide](https://www.codedeployingsquad.tech/docs/guide/contributingguide)
+> For contributing checkout our [Contributing Guide](https://www.codedeployingsquad.tech/docs/guide/contributingguide)
 
->For more guidance checkout [All Guides](https://www.codedeployingsquad.tech/docs/guide)
+> For more guidance checkout [All Guides](https://www.codedeployingsquad.tech/docs/guide)
 
 ## <span id="contributors">Contributors</span>
 
