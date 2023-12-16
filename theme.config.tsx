@@ -3,6 +3,7 @@ import type { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
 import Image from "next/image";
 import { GitHubIcon, TwitterXIcon, DiscordIcon } from "@components/icons";
+import SOCIAL_MEDIA_LINKS from "content/social-media";
 
 const logo = (
   <>
@@ -34,14 +35,14 @@ const logo = (
 
 const config: DocsThemeConfig = {
   project: {
-    link: "https://github.com/CodeDeployingSquad/website",
+    link:  SOCIAL_MEDIA_LINKS.github_cds.link,
     icon: <GitHubIcon />,
   },
   chat: {
-    link: "https://discord.gg/8SFAywV4M8",
+    link:  SOCIAL_MEDIA_LINKS.discord.link,
     icon: <DiscordIcon />,
   },
-  docsRepositoryBase: "https://github.com/CodeDeployingSquad/website",
+  docsRepositoryBase: SOCIAL_MEDIA_LINKS.github_cds_website_docsRepositoryBase.link,
   useNextSeoProps() {
     const { asPath } = useRouter();
     if (asPath !== "/") {
@@ -56,8 +57,8 @@ const config: DocsThemeConfig = {
     const { route } = useRouter();
     const socialCard =
       route === "/" || !title
-        ? "https://www.codedeployingsquad.tech/og.jpeg"
-        : `https://www.codedeployingsquad.tech/api/og?title=${title}&description=${frontMatter.description}`;
+        ? `${SOCIAL_MEDIA_LINKS.website.link}/og.jpeg`
+        : `${SOCIAL_MEDIA_LINKS.website.link}/api/og?title=${title}&description=${frontMatter.description}`;
 
     return (
       <>

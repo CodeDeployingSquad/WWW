@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useState } from "react";
 import styles from "./index.module.css";
 import Card from "@components/smash-card/Card";
+import SOCIAL_MEDIA_LINKS from "content/social-media.ts";
 // import HeroImage from "@components/HeroImage";
 
 <div className="home-content">
@@ -35,10 +36,10 @@ import Card from "@components/smash-card/Card";
         <Link className={styles.getstartedbtn} href="/docs">Get started <span>↗</span></Link>
       </p>
       <p className="subtitle w-screen flex justify-center items-center">
-        <Link className={styles.discordbtn}  href="https://discord.gg/uR7DpxtaKw">Discord <span>↗</span></Link>
+        <Link className={styles.discordbtn}  href={`${SOCIAL_MEDIA_LINKS.discord.link}`}>Discord <span>↗</span></Link>
       </p>
       <p className="subtitle w-screen flex justify-center items-center">
-        <Link className={styles.cta} href="https://twitter.com/bettercallcds/">Twitter <span>↗</span></Link>
+        <Link className={styles.cta} href={`${SOCIAL_MEDIA_LINKS.twitter.link}`}>Twitter <span>↗</span></Link>
       </p>
     </div>
 
@@ -47,10 +48,10 @@ import Card from "@components/smash-card/Card";
         <Link className={styles.getstartedbtn} href="/docs">Get started <span>↗</span></Link>
       </p>
       <p className="subtitle">
-        <Link className={styles.discordbtn}  href="https://discord.gg/uR7DpxtaKw">Discord <span>↗</span></Link>
+        <Link className={styles.discordbtn}  href={`${SOCIAL_MEDIA_LINKS.discord.link}`}>Discord <span>↗</span></Link>
       </p>
       <p className="subtitle">
-        <Link className={styles.cta} href="https://twitter.com/bettercallcds/">Twitter <span>↗</span></Link>
+        <Link className={styles.cta} href={`${SOCIAL_MEDIA_LINKS.twitter.link}`}>Twitter <span>↗</span></Link>
       </p>
     </div>
 
